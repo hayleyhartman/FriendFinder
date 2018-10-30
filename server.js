@@ -3,9 +3,6 @@ var apiRoutes = require('./app/routing/apiRoutes')
 var htmlRoutes = require('./app/routing/htmlRoutes')
 var app = express()
 
-
-//require apiroutes and htmlroutes
-
 // app.use apiroutes and htmlroutes after regular app.use stuff
 app.use(apiRoutes)
 app.use(htmlRoutes)

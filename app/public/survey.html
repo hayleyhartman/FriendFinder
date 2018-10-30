@@ -9,6 +9,7 @@
     <title>Roommater</title>
 
     <!-- Latest compiled and minified CSS & JS -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -18,7 +19,6 @@
 
     <!-- Chosen -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
 </head>
 
@@ -26,238 +26,33 @@
 
     <div class="container">
 
-        <h2>Survey Questions</h2>
-        <hr>
+        <div class='about'>
 
-        <h3><strong>About You</strong></h3>
-        <h4>Name (Required)</h4>
-        <input type="text" id="name" class="form-control" required="">
+            <h3><strong>About You</strong></h3>
+            <h4>Name (Required)</h4>
+            <input type="text" id="name" class="form-control" required="">
 
-        <h4>Link to Photo Image (Required)</h4>
-        <input type="text" id="photo" class="form-control" required="">
+            <h4>Link to Photo Image (Required)</h4>
+            <input type="text" id="photo" class="form-control" required="">
 
-        <hr>
-
-        <h3><strong>Question 1</strong></h3>
-        <h4>I hate doing dishes.</h4>
-        <select class="chosen-select" id="q1" style="display: none;">
-            <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-        <div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q1_chosen"><a class="chosen-single chosen-default"><span>Select
-                    an Option</span>
-                <div><b></b></div>
-            </a>
-            <div class="chosen-drop">
-                <div class="chosen-search"><input type="text" autocomplete="off"></div>
-                <ul class="chosen-results"></ul>
-            </div>
         </div>
 
-        <h3><strong>Question 2</strong></h3>
-        <h4>I would rather not have floors than pick up a mop.</h4>
-        <select class="chosen-select" id="q2" style="display: none;">
-            <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
+        <form>
+            <h4 class = 'question'>I hate doing dishes.</h4>
 
-        </select>
-        <div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q2_chosen"><a class="chosen-single chosen-default"><span>Select
-                    an Option</span>
-                <div><b></b></div>
-            </a>
-            <div class="chosen-drop">
-                <div class="chosen-search"><input type="text" autocomplete="off"></div>
-                <ul class="chosen-results"></ul>
-            </div>
-        </div>
-
-
-        <h3><strong>Question 3</strong></h3>
-        <h4>I am going to leave my belongings in common spaces, it is fun for me!!!!!</h4>
-        <select class="chosen-select" id="q3" style="display: none;">
-            <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-
-        </select>
-        <div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q3_chosen"><a class="chosen-single chosen-default"><span>Select
-                    an Option</span>
-                <div><b></b></div>
-            </a>
-            <div class="chosen-drop">
-                <div class="chosen-search"><input type="text" autocomplete="off"></div>
-                <ul class="chosen-results"></ul>
-            </div>
-        </div>
-
-
-        <h3><strong>Question 4</strong></h3>
-        <h4>I will avoid waiting for handymen and maintenance men at all costs.</h4>
-        <select class="chosen-select" id="q4" style="display: none;">
-            <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-        <div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q4_chosen"><a class="chosen-single chosen-default"><span>Select
-                    an Option</span>
-                <div><b></b></div>
-            </a>
-            <div class="chosen-drop">
-                <div class="chosen-search"><input type="text" autocomplete="off"></div>
-                <ul class="chosen-results"></ul>
-            </div>
-        </div>
-
-
-        <h3><strong>Question 5</strong></h3>
-        <h4>Scrubbing toilets is gross, I hate it, I will never do it.</h4>
-        <select class="chosen-select" id="q5" style="display: none;">
-            <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-
-        </select>
-        <div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q5_chosen"><a class="chosen-single chosen-default"><span>Select
-                    an Option</span>
-                <div><b></b></div>
-            </a>
-            <div class="chosen-drop">
-                <div class="chosen-search"><input type="text" autocomplete="off"></div>
-                <ul class="chosen-results"></ul>
-            </div>
-        </div>
-
-
-        <h3><strong>Question 6</strong></h3>
-        <h4>Am I going to use toilet paper? Yes. Am I going to buy it? Nope!</h4>
-        <select class="chosen-select" id="q6" style="display: none;">
-            <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-
-        </select>
-        <div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q6_chosen"><a class="chosen-single chosen-default"><span>Select
-                    an Option</span>
-                <div><b></b></div>
-            </a>
-            <div class="chosen-drop">
-                <div class="chosen-search"><input type="text" autocomplete="off"></div>
-                <ul class="chosen-results"></ul>
-            </div>
-        </div>
-
-
-        <h3><strong>Question 7</strong></h3>
-        <h4>I will walk around without pants on pretty much all the time.</h4>
-        <select class="chosen-select" id="q7" style="display: none;">
-            <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-
-        </select>
-        <div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q7_chosen"><a class="chosen-single chosen-default"><span>Select
-                    an Option</span>
-                <div><b></b></div>
-            </a>
-            <div class="chosen-drop">
-                <div class="chosen-search"><input type="text" autocomplete="off"></div>
-                <ul class="chosen-results"></ul>
-            </div>
-        </div>
-
-        <h3><strong>Question 8</strong></h3>
-        <h4>Weird smells do not bother me therefore I will never clean out the fridge.</h4>
-        <select class="chosen-select" id="q8" style="display: none;">
-            <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-
-        </select>
-        <div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q8_chosen"><a class="chosen-single chosen-default"><span>Select
-                    an Option</span>
-                <div><b></b></div>
-            </a>
-            <div class="chosen-drop">
-                <div class="chosen-search"><input type="text" autocomplete="off"></div>
-                <ul class="chosen-results"></ul>
-            </div>
-        </div>
-
-        <h3><strong>Question 9</strong></h3>
-        <h4>I would prefer to never, under any circumstances ever, talk to my roommate.</h4>
-        <select class="chosen-select" id="q9" style="display: none;">
-            <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-        <div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q9_chosen"><a class="chosen-single chosen-default"><span>Select
-                    an Option</span>
-                <div><b></b></div>
-            </a>
-            <div class="chosen-drop">
-                <div class="chosen-search"><input type="text" autocomplete="off"></div>
-                <ul class="chosen-results"></ul>
-            </div>
-        </div>
-
-        <h3><strong>Question 10</strong></h3>
-        <h4>If my roommate has friends over I will scream forever.</h4>
-        <select class="chosen-select" id="q10" style="display: none;">
-            <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-        <div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q10_chosen"><a class="chosen-single chosen-default"><span>Select
-                    an Option</span>
-                <div><b></b></div>
-            </a>
-            <div class="chosen-drop">
-                <div class="chosen-search"><input type="text" autocomplete="off"></div>
-                <ul class="chosen-results"></ul>
-            </div>
-        </div>
-
-        <br>
-        <br>
+            <input type = 'radio' name = '0' value = '1' id = '1'> <label for = '1'>Strongly Disagree (1)</label> <br>
+            <input type = 'radio' name = '0' value = '2' id='2'> <label for = '2'>2</label><br>
+            <input type = 'radio' name = '0' value = '3' id='3'> <label for = '3'>3</label><br>
+            <input type = 'radio' name = '0' value = '4' id='4'> <label for = '4'>4</label><br>
+            <input type = 'radio' name = '0' value = '5' id='5'> <label for = '5'>Strongly Agree (5)</label>
+        </form>
 
         <!-- Submit Button -->
         <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
                 aria-hidden="true"></i>
             Submit</button>
 
-        <hr>
+    
         <footer class="footer">
             <div class="container">
                 <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub
@@ -279,8 +74,7 @@
                 </div>
                 <div class="modal-body">
                     <h2 id="match-name"></h2>
-                    <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg"
-                        alt="">
+                    <img id="match-img" src="#" alt="">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -289,86 +83,41 @@
 
         </div>
     </div>
-    <script type="text/javascript">
-        // Chosen CSS
-        var config = {
-            ".chosen-select": {},
-            ".chosen-select-deselect": {
-                allow_single_deselect: true
-            },
-            ".chosen-select-no-single": {
-                disable_search_threshold: 10
-            },
-            ".chosen-select-no-results": {
-                no_results_text: "Oops, nothing found!"
-            },
-            ".chosen-select-width": {
-                width: "95%"
-            }
-        };
-
-        for (var selector in config) {
-            $(selector).chosen(config[selector]);
-        }
-
-        // Capture the form inputs
-        $("#submit").on("click", function (event) {
-            event.preventDefault();
-
-            // Form validation
-            function validateForm() {
-                var isValid = true;
-                $(".form-control").each(function () {
-                    if ($(this).val() === "") {
-                        isValid = false;
-                    }
-                });
-
-                $(".chosen-select").each(function () {
-
-                    if ($(this).val() === "") {
-                        isValid = false;
-                    }
-                });
-                return isValid;
-            }
-
-            // If all required fields are filled
-            if (validateForm()) {
-                // Create an object for the user"s data
-                var userData = {
-                    name: $("#name").val(),
-                    photo: $("#photo").val(),
-                    scores: [
-                        $("#q1").val(),
-                        $("#q2").val(),
-                        $("#q3").val(),
-                        $("#q4").val(),
-                        $("#q5").val(),
-                        $("#q6").val(),
-                        $("#q7").val(),
-                        $("#q8").val(),
-                        $("#q9").val(),
-                        $("#q10").val()
-                    ]
-                };
-
-                // AJAX post the data to the friends API.
-                $.post("/api/friends", userData, function (data) {
-
-                    // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-                    $("#match-name").text(data.name);
-                    $("#match-img").attr("src", data.photo);
-
-                    // Show the modal with the best match
-                    $("#results-modal").modal("toggle");
-
-                });
-            } else {
-                alert("Please fill out all fields before submitting!");
-            }
-        });
-    </script>
 </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var responses = []
+        var currentQ = 0
+        var Qs = ['I hate doing dishes.', 'I would rather not have floors than pick up a mop.',
+            'I am going to leave my belongings in common spaces, it is fun for me!!!!!',
+            'I will avoid waiting for handymen and maintenance men at all costs.',
+            'Scrubbing toilets is gross, I hate it, I will never do it.',
+            'Am I going to use toilet paper? Yes. Am I going to buy it? Nope!',
+            'I will walk around without pants on pretty much all the time.',
+            'Weird smells do not bother me therefore I will never clean out the fridge.',
+            'I would prefer to never, under any circumstances ever, talk to my roommate.',
+            'If my roommate has friends over I will scream forever.'
+        ]
+
+        $('#submit').on('click', function (e) {
+            event.preventDefault();
+            responses.push($('input[type=radio]:checked').attr('value'))
+            currentQ++
+            $('.question').text(Qs[currentQ])
+
+            if (currentQ > 9) {
+                $.post('/api/friends', function(res) {
+                    //plug response into match and then post picture and name to response
+                    //response needs to be a picture and a name of the match
+                    
+                })
+            }
+        })
+
+    </script>
+
 
 </html>
